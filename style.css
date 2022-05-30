@@ -10,6 +10,19 @@
 body {
     background-color: #f5f5f6;
     font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+p {
+    font-size: 20px;
 }
 
 .container-card .card {
@@ -18,8 +31,9 @@ body {
     position: relative;
     border-radius: 20px;
     background-color: #ebebeb;
-    width: 185px;
-    height: 300px;
+    width: 350px;
+    height: 500px;
+    box-shadow: 2px 6px #29292942;
     overflow: hidden;
 }
 
@@ -50,14 +64,14 @@ body {
 .pfp-container .pfp {
     border-radius: 50%;
     padding: 1px;
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
     background-color: #f5f5f6;
 }
 
 .pfp img {
-    width: 78px;
-    height: 78px;
+    width: 129px;
+    height: 129px;
     border-radius: 50%;
 }
 
@@ -98,14 +112,12 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
     margin: auto;
-    font-size: 10px;
 }
 
 .info .status {
     grid-column-start: 2;
     grid-column-end: 4;
     margin: auto;
-    font-size: 10px;
 }
 
 .email-container .email {
@@ -114,7 +126,7 @@ body {
     border: 0.1px solid #c8c8c8;
     border-radius: 3px;
     background-color: transparent;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .email-container .email:hover {
@@ -123,4 +135,16 @@ body {
 
 .email-container {
     padding: 15px;
+}
+
+@media (min-width: 700px) {
+    body {
+        background-image: url("https://images.pexels.com/photos/326508/pexels-photo-326508.jpeg");
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: url("https://images.pexels.com/photos/4195325/pexels-photo-4195325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
 }
